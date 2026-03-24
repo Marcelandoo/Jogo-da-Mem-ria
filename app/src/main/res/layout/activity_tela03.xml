@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202D57"
     android:orientation="vertical"
     tools:context=".Tela03">
 
@@ -15,12 +16,50 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="34sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -43,14 +82,6 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             app:srcCompat="@drawable/ic_action_name_4" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.4"
-        android:gravity="center"
-        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -65,5 +96,42 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             app:srcCompat="@drawable/ic_action_name_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_action_name_4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_action_name_2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_action_name_4" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_action_name_2" />
     </LinearLayout>
 </LinearLayout>

@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CDDC39"
+    android:backgroundTint="#2E4095"
     android:orientation="vertical"
     tools:context=".Tela02">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.47"
+        android:background="#202D57"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -25,17 +26,26 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
                 android:layout_weight="1"
+                android:backgroundTintMode="src_in"
                 android:text="Nome"
+                android:textColor="#FAF8F8"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editTextText"
-                android:layout_width="wrap_content"
+                android:layout_width="700px"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="100px"
                 android:layout_weight="1"
+                android:backgroundTintMode="src_in"
                 android:ems="10"
-                android:inputType="text" />
+                android:hyphenationFrequency="normal"
+                android:inputType="text"
+                android:textColorLink="#FAF8F8"
+                android:textSize="16sp"
+                android:typeface="normal" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,32 +57,44 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
                 android:layout_weight="1"
+                android:backgroundTintMode="src_in"
                 android:text="Idade"
+                android:textColor="#FAF8F8"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editTextText2"
-                android:layout_width="wrap_content"
+                android:layout_width="700px"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="100px"
                 android:layout_weight="1"
+                android:backgroundTintMode="src_in"
                 android:ems="10"
-                android:inputType="text" />
+                android:hyphenationFrequency="normal"
+                android:inputType="text"
+                android:textColor="#FAF8F8"
+                android:textColorLink="#FAF8F8"
+                android:textSize="16sp"
+                android:typeface="normal" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:gravity="center"
+        android:layout_weight="0.3"
+        android:background="#202D57"
+        android:gravity="center|top|fill_vertical"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IR"
+            android:layout_width="500px"
+            android:layout_height="200px"
+            android:backgroundTint="#2E4095"
+            android:text="Ir"
             android:textSize="34sp" />
     </LinearLayout>
 </LinearLayout>
