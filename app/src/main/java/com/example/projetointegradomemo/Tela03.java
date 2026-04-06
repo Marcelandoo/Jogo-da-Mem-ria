@@ -115,20 +115,17 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
 
         handler.postDelayed(this, 3000);
         contaToque = 0;
-
-
     }
 
-    public void compara(int imagem1, int imagem2){
-        contaToque =0;
-        if(imagem1 == imagem2)
-        {
+    public void compara(int imagem1, int imagem2) {
+        contaToque = 0;
+        if (imagem1 == imagem2) {
             imgTocado1.setBackgroundColor(Color.GREEN);
             imgTocado2.setBackgroundColor(Color.GREEN);
             imgTocado1.setEnabled(false);
             imgTocado2.setEnabled(false);
             //deu match
-        }else {
+        } else {
             //deu errado
             imgTocado1.setBackgroundColor(Color.RED);
             imgTocado2.setBackgroundColor(Color.RED);
@@ -142,12 +139,8 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
                     imgTocado2.setImageResource(R.drawable.ic_action_name_6);
                 }
             }, 2000);
-
         }
-
     }
-
-
 
     @Override
     public void onClick(View view) {
@@ -162,7 +155,6 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
                 imgTocado2 = img1;
                 imagemImgTocado2 = lista.get(0);
                 compara(imagemImgTocado1,imagemImgTocado2);
-
             }
         }
         if(view == img2){
@@ -224,7 +216,6 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
                 imgTocado2 = img6;
                 imagemImgTocado2 = lista.get(5);
                 compara(imagemImgTocado1,imagemImgTocado2);
-
             }
         }
         if(view == img7){
