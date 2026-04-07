@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class tela04 extends AppCompatActivity {
-    private TextView textoDoNome;
+    private TextView textoDoNome, textoDoContador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +20,14 @@ public class tela04 extends AppCompatActivity {
         setContentView(R.layout.activity_tela04);
 
         textoDoNome = findViewById(R.id.textView5);
+        textoDoContador = findViewById(R.id.textView6);
         Intent i = getIntent();
         if(i != null){
             Bundle caixa = new Bundle();
             caixa = i.getExtras();
             if(caixa != null){
                 textoDoNome.setText(caixa.getString("nome"));
+                textoDoContador.setText(Integer.toString(caixa.getInt("conte")));
             }
         }
     }

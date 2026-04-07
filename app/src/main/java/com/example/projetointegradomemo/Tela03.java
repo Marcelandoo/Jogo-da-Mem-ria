@@ -20,12 +20,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Tela03 extends AppCompatActivity implements View.OnClickListener, Runnable {
-    private TextView textoDoNome;
+    private TextView textoDoNome, textoDoContador;
     private ImageView img1, img2, img3, img4, img5, img6, img7, img8;
     private ImageView imgTocado1, imgTocado2;
     private int imagemImgTocado1, imagemImgTocado2, contaToque;
     private Handler handler;
     private Button fim, renicia;
+    private int contador;
 
     private ArrayList<Integer> lista;
 
@@ -36,6 +37,8 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
         setContentView(R.layout.activity_tela03);
         fim = findViewById(R.id.button3);
         fim.setOnClickListener(this);
+
+        contador = 1;
 
         textoDoNome = findViewById(R.id.textView3);
         Intent i = getIntent();
@@ -248,10 +251,13 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener, R
             Intent i = new Intent(this, tela04.class);
             Bundle caixa = new Bundle();
             caixa.putString("nome", textoDoNome.getText().toString());
+            caixa.putInt("conte", contador);
             i.putExtras(caixa);
             startActivity(i);
         }
+
         if(view == renicia){
+            contador++;
             inicio();
         }
     }
